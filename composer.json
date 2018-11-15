@@ -1,0 +1,43 @@
+{
+    "name": "muyaedward/rateable-laravel",
+    "description": "Allows multiple models to be rated with a fivestar like system.",
+    "keywords": [
+        "laravel",
+        "rateable",
+        "rating",
+        "vote",
+        "fivestar",
+        "laravel 5"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Edward Mwangi",
+            "email": "muyaedward@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "~5.0",
+        "illuminate/database": "~5.0"
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/commands"
+        ],
+        "psr-4": {
+            "muyaedward\\Rateable\\": "src/Rateable"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "muyaedward\\Rateable\\RateableServiceProvider"
+            ]
+        }
+    }
+}
